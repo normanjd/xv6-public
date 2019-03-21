@@ -97,3 +97,13 @@ int sys_date(struct rtcdate *r) {
     cmostime(r);
     return 0;
 }
+
+int sys_settickets(void) {
+    int tickets;
+
+    if(argint(0, &tickets) < 0) {
+        return -1;
+    }
+
+    // set the tickets
+}
