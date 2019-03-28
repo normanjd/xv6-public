@@ -105,5 +105,5 @@ int sys_settickets(void) {
         return -1;
     }
 
-    // set the tickets
+    myproc()->tickets = tickets;
 }
